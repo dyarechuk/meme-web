@@ -56,6 +56,9 @@ export const MemeTable = () => {
 								<TableColumn
 									key={col.key}
 									onClick={col.sortable ? () => handleSort(col.key as SortField) : undefined}
+									className={
+										col.label !== 'Image' && col.label !== 'Actions' ? 'cursor-pointer' : ''
+									}
 								>
 									{col.label}
 									{col.sortable && <SortIcon active={sortBy === col.key} order={sortOrder} />}

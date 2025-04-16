@@ -37,7 +37,7 @@ export const EditModal = ({ meme, onSave, onClose }: EditModalProps) => {
 	};
 
 	return (
-		<Modal isOpen={true} onClose={onClose}>
+		<Modal isOpen={true} backdrop="opaque" onClose={onClose}>
 			<ModalContent>
 				<ModalHeader className="bg-orange-400 text-white ">Edit Meme #{meme.id}</ModalHeader>
 				<ModalBody className="space-y-4 mt-4 text-black">

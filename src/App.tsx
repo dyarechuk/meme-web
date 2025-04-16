@@ -7,7 +7,7 @@ import { ListPage } from '@/pages/ListPage';
 
 function App() {
 	return (
-		<HeroUIProvider>
+		<HeroUIProvider locale="en-US">
 			<ToastProvider />
 			<div className="min-h-screen">
 				<AppNavbar />

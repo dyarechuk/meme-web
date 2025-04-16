@@ -12,9 +12,14 @@ export const AppNavbar = () => {
 
 	return (
 		<Navbar className="bg-slate-900 text-white">
-			<NavbarBrand className="text-lg font-bold text-orange-400">Meme Directory</NavbarBrand>
+			<NavbarBrand
+				className={`text-lg font-bold text-orange-400
+					${pathname === '/list' ? 'ml-[7.7px] ' : ''}`}
+			>
+				Meme Directory
+			</NavbarBrand>
 
-			<NavbarContent className="gap-4">
+			<NavbarContent className={`gap-4 ${pathname === '/list' ? 'ml-[7.7px] ' : ''}`}>
 				{navItems.map(({ path, label }) => {
 					const isActive = pathname === path;
 
@@ -25,7 +30,7 @@ export const AppNavbar = () => {
 								aria-current={isActive ? 'page' : undefined}
 								className={`transition hover:text-orange-400 ${
 									isActive ? 'text-orange-400 font-semibold' : ''
-								}`}
+								} `}
 							>
 								{label}
 							</Link>
