@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router';
-import { HeroUIProvider, ToastProvider } from '@heroui/react';
+import { HeroUIProvider, ScrollShadow, ToastProvider } from '@heroui/react';
 
 import { AppNavbar } from '@/components/AppNavbar';
 import { TablePage } from '@/pages/TablePage';
@@ -9,7 +9,7 @@ function App() {
 	return (
 		<HeroUIProvider locale="en-US">
 			<ToastProvider />
-			<div className="min-h-screen">
+			<div className="min-h-screen scrollbar-hide h-32 overflow-y-scroll">
 				<AppNavbar />
 				<main className="p-4">
 					<Routes>

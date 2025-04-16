@@ -12,14 +12,9 @@ export const AppNavbar = () => {
 
 	return (
 		<Navbar className="bg-slate-900 text-white">
-			<NavbarBrand
-				className={`text-lg font-bold text-orange-400
-					${pathname === '/list' ? 'ml-[7.7px] ' : ''}`}
-			>
-				Meme Directory
-			</NavbarBrand>
+			<NavbarBrand className={'text-lg font-bold text-orange-400'}>Meme Directory</NavbarBrand>
 
-			<NavbarContent className={`gap-4 ${pathname === '/list' ? 'ml-[7.7px] ' : ''}`}>
+			<NavbarContent className={'gap-4'}>
 				{navItems.map(({ path, label }) => {
 					const isActive = pathname === path;
 
