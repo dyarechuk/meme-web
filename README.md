@@ -28,7 +28,7 @@
 - **Zod** – Type-safe schema validation for forms.
 - **Framer Motion** – Animations and transitions.
 - **TypeScript** – Strong typing across the app.
-- **Railway** – Hosting frontend, backend, and database separately.
+- **Render** – Hosting frontend, backend, and database separately.
 
 ---
 
@@ -51,13 +51,13 @@ src/
 
 ---
 
-## 🚀 Deployment (Railway)
+## 🚀 Deployment (Render)
 
 This app is designed for **separate deployment** of:
 
-- 🧑‍🎨 **Frontend** (React + Vite) — deploy as a **Static Site** on Railway.
-- ⚙️ **Backend** (NestJS or any REST API) — separate Railway service.
-- 🗃️ **Database** (PostgreSQL) — also deployed on Railway.
+- 🧑‍🎨 **Frontend** (React + Vite) — deploy as a **Static Site** on Render.
+- ⚙️ **Backend** (NestJS or any REST API) — separate Render service.
+- 🗃️ **Database** (PostgreSQL) — also deployed on Render.
 
 > Make sure to define `VITE_API_URL` in your `.env` file in the frontend:
 
@@ -101,6 +101,6 @@ The backend can be built using any tech (NestJS + PostgreSQL recommended) and sh
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 This project was created by [Dmytro Yarechuk](https://github.com/Dyarechuk).
