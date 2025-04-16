@@ -27,7 +27,7 @@ export const MemeTable = () => {
 	const [selectedMeme, setSelectedMeme] = useState<Meme | null>(null);
 
 	const [sortBy, sortOrder, handleSort] = useSortParams();
-	const { data: memes = [], isLoading } = useMemes(sortBy, sortOrder);
+	const { data: memes = [], isLoading } = useMemes(sortBy ?? undefined, sortOrder ?? undefined);
 	const updateMutation = useUpdateMeme();
 
 	const handleUpdate = (updated: Meme) => {
@@ -43,14 +43,14 @@ export const MemeTable = () => {
 
 	return (
 		<>
-			<div className="mx-auto overflow-x-auto container">
+			<div className="mx-auto container">
 				{isLoading ? (
 					<TableSkeleton />
 				) : (
 					<Table
 						aria-label="Meme table"
 						isStriped
-						className="min-w-[700px] text-gray-800 [&_thead_th]:!bg-orange-400 [&_thead_th]:text-white [&_thead_th]:text-lg"
+						className="min-w-[700px] overflow-x-auto text-gray-800 [&_thead_th]:!bg-orange-400 [&_thead_th]:text-white [&_thead_th]:text-lg [&_div]:scrollbar-thin [&_div]:scrollbar-thumb-orange-400 [&_div]:scrollbar-track-zinc-900"
 					>
 						<TableHeader>
 							{columns.map((col) => (

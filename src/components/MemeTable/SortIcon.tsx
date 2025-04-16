@@ -1,7 +1,7 @@
-import { ChevronUpIcon } from '@heroicons/react/24/outline';
+import { ChevronUpIcon } from '@heroicons/react/24/solid';
 
-export const SortIcon = ({ active, order }: { active: boolean; order: 'asc' | 'desc' }) => {
-	if (!active) return null;
+export const SortIcon = ({ active, order }: { active: boolean; order: 'asc' | 'desc' | null }) => {
+	if (!active || !order) return null;
 
 	return (
 		<ChevronUpIcon
