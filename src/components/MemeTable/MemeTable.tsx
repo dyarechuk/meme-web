@@ -43,19 +43,21 @@ export const MemeTable = () => {
 
 	return (
 		<>
-			<div className="w-full overflow-x-auto">
+			<div className="mx-auto overflow-x-auto container">
 				{isLoading ? (
 					<TableSkeleton />
 				) : (
 					<Table
 						aria-label="Meme table"
-						className="min-w-[700px] text-gray-800 [&_*]:bg-orange-100 [&_thead_th]:!bg-orange-400 [&_thead_th]:text-white [&_thead_th]:text-lg"
+						isStriped
+						className="min-w-[700px] text-gray-800 [&_thead_th]:!bg-orange-400 [&_thead_th]:text-white [&_thead_th]:text-lg"
 					>
 						<TableHeader>
 							{columns.map((col) => (
 								<TableColumn
 									key={col.key}
 									onClick={col.sortable ? () => handleSort(col.key as SortField) : undefined}
+									width={col.width}
 									className={
 										col.label !== 'Image' && col.label !== 'Actions' ? 'cursor-pointer' : ''
 									}

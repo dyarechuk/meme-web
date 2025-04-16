@@ -11,7 +11,7 @@ export const AppNavbar = () => {
 	const { pathname } = useLocation();
 
 	return (
-		<Navbar className="bg-slate-900 text-white">
+		<Navbar className="bg-zinc-900 text-white">
 			<NavbarBrand className={'text-lg font-bold text-orange-400'}>Meme Directory</NavbarBrand>
 
 			<NavbarContent className={'gap-4'}>
