@@ -62,7 +62,7 @@ This app is designed for **separate deployment** of:
 > Make sure to define `VITE_API_URL` in your `.env` file in the frontend:
 
 ```env
-VITE_API_URL=https://meme-api-swn0.onrender.com/api
+VITE_API_URL=http://localhost:3000/api
 ```
 
 ## 📦 Getting Started
