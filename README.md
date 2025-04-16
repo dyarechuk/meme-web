@@ -1,6 +1,6 @@
 # 🧠 Meme Directory
 
-[LIVE DEMO](https://your-frontend-url-on-railway.app)
+[LIVE DEMO](https://meme-web-kfht.onrender.com/)
 
 **Meme Directory** is a fully functional CRUD application for viewing and editing memes. It features a clean UI, sortable tables, animated components, and form validation — all powered by modern technologies and structured with a scalable architecture.
 
@@ -35,18 +35,18 @@
 ## 📁 Project Structure
 ```
 src/
-├── api/        # API functions
-├── components/   # Reusable UI components (e.g., MemeTable)
-│   |── AppNavbar/
-│   |── MemeList/
+├── api/            # API functions
+├── components/     # Reusable UI components (e.g., MemeTable)
+│   ├── AppNavbar/
+│   ├── MemeList/
 │   └── MemeTable/
-├── config/   # Table column configuration
-├── hooks/      # Custom hooks (queries, sorting)
-├── pages/    # Route-based pages
-├── schemas/     # Zod validation schemas
-├── types/       # Type definitions
-├── ui/     # UI effects or transitions
-└── utils/     # Utilities (toasts, sort handling)
+├── config/         # Table column configuration
+├── hooks/          # Custom hooks (queries, sorting)
+├── pages/          # Route-based pages
+├── schemas/        # Zod validation schemas
+├── types/          # Type definitions
+├── ui/             # UI effects or transitions
+└── utils/          # Utilities (toasts, sort handling)
 ```
 
 ---
@@ -62,7 +62,7 @@ This app is designed for **separate deployment** of:
 > Make sure to define `VITE_API_URL` in your `.env` file in the frontend:
 
 ```env
-VITE_API_URL=https://your-backend-service-url.up.railway.app
+VITE_API_URL=https://meme-api-swn0.onrender.com/api
 ```
 
 ## 📦 Getting Started
@@ -70,8 +70,8 @@ VITE_API_URL=https://your-backend-service-url.up.railway.app
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/dyarechuk/MemeDirectory.git
-cd MemeDirectory
+git clone https://github.com/dyarechuk/meme-web.git
+cd meme-web
 ```
 
 ### 2. Install dependencies
